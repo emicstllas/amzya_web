@@ -6,7 +6,6 @@ next-env.d.ts
 *.tsbuildinfo
 .DS_Store
 .claude/
-review-sheets/
 .impeccable/hook.cache.json
 # Earlier video direction and photo sets, kept out of the site repo
 *.mp4

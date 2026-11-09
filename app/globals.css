@@ -280,6 +280,13 @@ html[lang='ar'] .services {
   z-index: 1;
 }
 
+/* In Arabic the layout mirrors: the boom swings to the other side of the hoist line (52.3% of the scene).
+   The mark and the member it receives never mirror. */
+html[dir='rtl'] .plate-boom {
+  left: 4.6%;
+  transform: scaleX(-1);
+}
+
 .plate-rig {
   left: 31.66%;
   top: 0;
@@ -382,7 +389,6 @@ html[lang='ar'] .services {
     justify-content: space-between;
     gap: 16px;
     padding-top: 20px;
-    direction: ltr;
   }
 
   .logo {
@@ -399,7 +405,6 @@ html[lang='ar'] .services {
 
   .scene {
     margin: 12px -16px 0;
-    aspect-ratio: 1513 / 1190;
     width: calc(100% + 32px);
     overflow: hidden;
     /* The crane comes down from above the header: its cables and boom fade in instead of starting at a hard edge. */
@@ -409,10 +414,10 @@ html[lang='ar'] .services {
 
   /* The mark takes ~88% of the width; the boom runs off the right edge. */
   .scene-art {
-    left: 6%;
-    top: 0;
+    position: relative;
+    margin-left: 6%;
     width: 121%;
-    height: 100%;
+    aspect-ratio: 1513 / 1190;
   }
 
   .headlines {
@@ -490,7 +495,7 @@ html[lang='ar'] .services {
     position: relative;
     flex: none;
     width: min(100vw, 100svh * 1.6875);
-    aspect-ratio: 2592 / 1536;
+    height: min(100svh, min(100vw, 100svh * 1.6875) * 0.652);
     container-type: inline-size;
   }
 
@@ -508,6 +513,11 @@ html[lang='ar'] .services {
     height: 4.82cqw;
   }
 
+  html[dir='rtl'] .logo {
+    left: auto;
+    right: 4.05cqw;
+  }
+
   .lang-toggle {
     position: absolute;
     left: 88.39cqw;
@@ -516,6 +526,10 @@ html[lang='ar'] .services {
     height: 3.12cqw;
     font-size: max(13px, 1.12cqw);
     border-radius: max(4px, 0.25cqw);
+  }
+
+  html[dir='rtl'] .lang-toggle {
+    left: 2.51cqw;
   }
 
   .scene {
@@ -563,7 +577,7 @@ html[lang='ar'] .services {
     position: absolute;
     left: 0;
     right: 0;
-    top: 48.88cqw;
+    bottom: 6.13cqw;
     height: 4.24cqw;
     display: flex;
     justify-content: center;
@@ -598,7 +612,7 @@ html[lang='ar'] .services {
     position: absolute;
     left: 3cqw;
     right: 3cqw;
-    top: 54.2cqw;
+    bottom: 2.9cqw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

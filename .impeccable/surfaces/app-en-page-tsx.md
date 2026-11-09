@@ -11,7 +11,12 @@ Approved comp: .impeccable/mocks/decision/mark.png
 
 Scope change after approval: the comp's third action (Company profile) is removed. The user's words on 2026-11-09: "lets not include company profile for now". WhatsApp and Email remain, equal width, centred where the three buttons stood.
 
-Plan and asset review: the user approved all four items (steel mark, crane rig, crane boom, logo) in chat on 2026-11-09, after the review page closed three times on its idle timeout without a submission (review session 93d79cf45d23d93bc7985d48c9aba6ef48feb2cec62f35e922e2dfd97483d63d). No review receipt exists; the build-phase gate stays at plates.
+Plan and asset review: the review page (session 93d79cf45d23d93bc7985d48c9aba6ef48feb2cec62f35e922e2dfd97483d63d) closed three times on its idle timeout without a submission. The four plates were then shown in chat on the dark ground (review-sheets/1-steel-mark.png, 2-crane-rig.png, 3-crane-boom.png, 4-logo.png) with these notes: the mark follows the official logo outline (its curved legs are the logo's own geometry, unlike the comp's straight members), the joinery is riveted plate rather than the comp's bolted gussets, the bottom corners are plain burgundy, the base edge is a mirrored copy, the boom is "a slim lattice arm across the top of the page that fades out at the right edge" (thinner than the comp), and the logo is the official horizontal reverse file. The user replied, verbatim, on 2026-11-09: "Approve all four". No review receipt exists, so the build-phase gate stays at plates and the hero gate never ran; nothing was submitted on the user's behalf.
+
+Adaptations after the finish review (2026-11-09):
+- Arabic (/ar) mirrors the masthead (logo right, toggle left) per the design system's RTL rule, and the boom swings to the other side of the hoist line so it clears the logo. The steel mark and the member it receives never mirror.
+- Desktop: the stage fills the viewport height (up to 10% past the comp's aspect) and the actions and services anchor to its foot.
+- Phones: the masthead holds the band where the crane's upper rigging would be (logo and toggle leave no clear lane for the cables in both directions), so the rigging fades in below it instead of running to the top edge.
 
 ## Direction contract
 

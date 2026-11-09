@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-09T07:44:32+00:00",
+  "title": "Design System: AMZYA Contracting LLC, under construction page",
+  "extensions": {
+    "colorMeta": {
+      "burgundy-700": {
+        "role": "primary",
+        "displayName": "Logo Burgundy",
+        "canonical": "#5c1f2c",
+        "tonalRamp": [
+          "#2e0f16",
+          "#461722",
+          "#5c1f2c",
+          "#74293a",
+          "#8a3b4c",
+          "#a95f6e",
+          "#c98a96",
+          "#efd9de"
+        ]
+      },
+      "burgundy-600": {
+        "role": "primary",
+        "displayName": "Burgundy Lift",
+        "canonical": "#74293a",
+        "tonalRamp": [
+          "#2e0f16",
+          "#461722",
+          "#5c1f2c",
+          "#74293a",
+          "#8a3b4c",
+          "#a95f6e",
+          "#c98a96",
+          "#efd9de"
+        ]
+      },
+      "burgundy-800": {
+        "role": "primary",
+        "displayName": "Burgundy Press",
+        "canonical": "#461722",
+        "tonalRamp": [
+          "#2e0f16",
+          "#461722",
+          "#5c1f2c",
+          "#74293a",
+          "#8a3b4c",
+          "#a95f6e",
+          "#c98a96",
+          "#efd9de"
+        ]
+      },
+      "burgundy-500": {
+        "role": "primary",
+        "displayName": "Divider Burgundy",
+        "canonical": "#8a3b4c",
+        "tonalRamp": [
+          "#2e0f16",
+          "#461722",
+          "#5c1f2c",
+          "#74293a",
+          "#8a3b4c",
+          "#a95f6e",
+          "#c98a96",
+          "#efd9de"
+        ]
+      },
+      "burgundy-300": {
+        "role": "primary",
+        "displayName": "Rose Hairline",
+        "canonical": "#c98a96",
+        "tonalRamp": [
+          "#2e0f16",
+          "#461722",
+          "#5c1f2c",
+          "#74293a",
+          "#8a3b4c",
+          "#a95f6e",
+          "#c98a96",
+          "#efd9de"
+        ]
+      },
+      "gray-900": {
+        "role": "neutral",
+        "displayName": "Site Charcoal",
+        "canonical": "#242424",
+        "tonalRamp": [
+          "#242424",
+          "#333333",
+          "#4d4d4d",
+          "#666666",
+          "#969696",
+          "#b8b8b7",
+          "#d6d6d5",
+          "#f6f6f5"
+        ]
+      },
+      "gray-700": {
+        "role": "neutral",
+        "displayName": "Scaffold Gray",
+        "canonical": "#4d4d4d",
+        "tonalRamp": [
+          "#242424",
+          "#333333",
+          "#4d4d4d",
+          "#666666",
+          "#969696",
+          "#b8b8b7",
+          "#d6d6d5",
+          "#f6f6f5"
+        ]
+      },
+      "gray-100": {
+        "role": "neutral",
+        "displayName": "Services Gray",
+        "canonical": "#ebebea",
+        "tonalRamp": [
+          "#242424",
+          "#333333",
+          "#4d4d4d",
+          "#666666",
+          "#969696",
+          "#b8b8b7",
+          "#d6d6d5",
+          "#f6f6f5"
+        ]
+      },
+      "off-white": {
+        "role": "neutral",
+        "displayName": "Warm Off-White",
+        "canonical": "#f6f4f0",
+        "tonalRamp": [
+          "#3a3833",
+          "#55524b",
+          "#77736a",
+          "#9b968c",
+          "#bfbab0",
+          "#dcd8cf",
+          "#ebe8e1",
+          "#f6f4f0"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Pure White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#3a3833",
+          "#55524b",
+          "#77736a",
+          "#9b968c",
+          "#bfbab0",
+          "#dcd8cf",
+          "#ebe8e1",
+          "#ffffff"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display, English",
+        "purpose": "English headline; 4.05cqw on desktop."
+      },
+      "display-ar": {
+        "displayName": "Display, Arabic",
+        "purpose": "Arabic headline; 3.85cqw on desktop."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Services line; max(13px, 1.36cqw) on desktop."
+      },
+      "title-ar": {
+        "displayName": "Title, Arabic",
+        "purpose": "Arabic services line; max(13px, 1.24cqw) on desktop."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Document default; no running text on this page."
+      },
+      "body-ar": {
+        "displayName": "Body, Arabic",
+        "purpose": "Arabic document default."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Button labels and EN toggle; uppercase, tracked. max(14px, 1.45cqw) on desktop."
+      },
+      "label-ar": {
+        "displayName": "Label, Arabic",
+        "purpose": "Arabic button labels; no case, no tracking."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.2, 0, 0, 1)",
+        "purpose": "UI state transitions (design system token)."
+      },
+      {
+        "name": "dur-fast",
+        "value": "120ms",
+        "purpose": "Declared from the design system; reserved for small state changes."
+      },
+      {
+        "name": "dur-base",
+        "value": "200ms",
+        "purpose": "Button, toggle and arrow transitions."
+      },
+      {
+        "name": "ease-load",
+        "value": "cubic-bezier(0.45, 0, 0.2, 1)",
+        "purpose": "The crane's own ease: a heavy load starts and stops slowly."
+      },
+      {
+        "name": "amz-lower",
+        "value": "12s var(--ease-load) infinite; hold 0-12%, lower 25.35% to 36%, hold to 62%, lift to 86%",
+        "purpose": "The rig lowers the final member into the mark; reduced motion shows it raised."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "desktop",
+        "value": "(min-width: 900px) and (min-aspect-ratio: 4/3)"
+      },
+      {
+        "name": "stacked",
+        "value": "(max-width: 899px), (max-aspect-ratio: 4/3)"
+      }
+    ],
+    "pattern": {
+      "name": "amz-pattern-dark",
+      "value": "background-color:#242424;background-image:repeating-linear-gradient(59deg,transparent 0 22px,rgba(201,138,150,.1) 22px 23px),repeating-linear-gradient(121deg,transparent 0 22px,rgba(255,255,255,.05) 22px 23px);",
+      "purpose": "Brand hairline ground at the mark's 31-degree angle (--mark-angle)."
+    },
+    "sourceOfTruth": "Official AMZYA design system, dark theme (readme.md, tokens/*.css)."
+  },
+  "components": [
+    {
+      "name": "Solid Button",
+      "kind": "button",
+      "refersTo": "button-solid",
+      "description": "The one burgundy action per view (WhatsApp).",
+      "html": "<a class=\"ds-btn ds-btn-solid\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7.9 20A9 9 0 1 0 4 16.1L2 22Z\"/><path transform=\"translate(7.2 7.2) scale(.4)\" stroke-width=\"4.4\" d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"/></svg><span>WhatsApp</span><svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:56px;padding:0 20px;border:1.5px solid rgba(246,244,240,.85);border-radius:4px;color:#f6f4f0;font-family:Jost,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;letter-spacing:.08em;line-height:1;text-decoration:none;white-space:nowrap;transition:background-color 200ms cubic-bezier(.2,0,0,1),border-color 200ms cubic-bezier(.2,0,0,1),color 200ms cubic-bezier(.2,0,0,1)} .ds-btn:focus-visible{outline:3px solid #c98a96;outline-offset:3px} .ds-btn svg{flex:none} .ds-btn .ds-arrow{transition:transform 200ms cubic-bezier(.2,0,0,1)} .ds-btn:hover .ds-arrow{transform:translateX(.25em)} .ds-btn-solid{background:#5c1f2c;border-color:#5c1f2c} .ds-btn-solid:hover{background:#74293a;border-color:#74293a} .ds-btn-solid:active{background:#461722;border-color:#461722}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action (Email): off-white hairline outline.",
+      "html": "<a class=\"ds-btn ds-btn-outline\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"20\" height=\"16\" x=\"2\" y=\"4\" rx=\"2\"/><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"/></svg><span>Email</span><svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:56px;padding:0 20px;border:1.5px solid rgba(246,244,240,.85);border-radius:4px;color:#f6f4f0;font-family:Jost,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;letter-spacing:.08em;line-height:1;text-decoration:none;white-space:nowrap;transition:background-color 200ms cubic-bezier(.2,0,0,1),border-color 200ms cubic-bezier(.2,0,0,1),color 200ms cubic-bezier(.2,0,0,1)} .ds-btn:focus-visible{outline:3px solid #c98a96;outline-offset:3px} .ds-btn svg{flex:none} .ds-btn .ds-arrow{transition:transform 200ms cubic-bezier(.2,0,0,1)} .ds-btn:hover .ds-arrow{transform:translateX(.25em)} .ds-btn-outline{background:transparent} .ds-btn-outline:hover{background:rgba(246,244,240,.08);border-color:#fff;color:#fff} .ds-btn-outline:active{background:rgba(246,244,240,.14)}"
+    },
+    {
+      "name": "Solid Button, Arabic",
+      "kind": "button",
+      "refersTo": "button-solid",
+      "description": "RTL variant: Plex Sans Arabic 600, no case or tracking, arrow flipped to the reading direction.",
+      "html": "<a class=\"ds-btn ds-btn-solid ds-btn-ar\" dir=\"rtl\" lang=\"ar\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7.9 20A9 9 0 1 0 4 16.1L2 22Z\"/><path transform=\"translate(7.2 7.2) scale(.4)\" stroke-width=\"4.4\" d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"/></svg><span>واتساب</span><svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:56px;padding:0 20px;border:1.5px solid rgba(246,244,240,.85);border-radius:4px;color:#f6f4f0;font-family:Jost,sans-serif;font-weight:600;font-size:16px;text-transform:uppercase;letter-spacing:.08em;line-height:1;text-decoration:none;white-space:nowrap;transition:background-color 200ms cubic-bezier(.2,0,0,1),border-color 200ms cubic-bezier(.2,0,0,1),color 200ms cubic-bezier(.2,0,0,1)} .ds-btn:focus-visible{outline:3px solid #c98a96;outline-offset:3px} .ds-btn svg{flex:none} .ds-btn .ds-arrow{transition:transform 200ms cubic-bezier(.2,0,0,1)} .ds-btn:hover .ds-arrow{transform:translateX(.25em)} .ds-btn-solid{background:#5c1f2c;border-color:#5c1f2c} .ds-btn-solid:hover{background:#74293a;border-color:#74293a} .ds-btn-ar{font-family:'IBM Plex Sans Arabic',sans-serif;text-transform:none;letter-spacing:0} .ds-btn-ar .ds-arrow{transform:scaleX(-1)} .ds-btn-ar:hover .ds-arrow{transform:scaleX(-1) translateX(.25em)}"
+    },
+    {
+      "name": "Language Toggle",
+      "kind": "nav",
+      "refersTo": "lang-toggle",
+      "description": "EN / عربي switch; current language filled off-white. Always LTR.",
+      "html": "<nav class=\"ds-toggle\" dir=\"ltr\" aria-label=\"Language\"><a href=\"#\" lang=\"en\" aria-current=\"page\">EN</a><a href=\"#\" lang=\"ar\">عربي</a></nav>",
+      "css": ".ds-toggle{display:grid;grid-template-columns:1fr 1fr;width:104px;height:40px;font-size:15px;border:1px solid rgba(246,244,240,.7);border-radius:4px;overflow:hidden} .ds-toggle a{display:grid;place-items:center;color:#f6f4f0;text-decoration:none;transition:background-color 200ms cubic-bezier(.2,0,0,1),color 200ms cubic-bezier(.2,0,0,1)} .ds-toggle a[lang=en]{font-family:Jost,sans-serif;font-weight:600;letter-spacing:.08em} .ds-toggle a[lang=ar]{font-family:'IBM Plex Sans Arabic',sans-serif;font-weight:500} .ds-toggle a:hover{background:rgba(246,244,240,.1)} .ds-toggle a[aria-current=page]{background:#f6f4f0;color:#242424} .ds-toggle a:focus-visible{outline:3px solid #c98a96;outline-offset:-4px}"
+    },
+    {
+      "name": "Bilingual Headline on Hairline Ground",
+      "kind": "custom",
+      "refersTo": "display",
+      "description": "The two equal-rank headlines over the 31-degree pattern ground.",
+      "html": "<div class=\"ds-ground\"><h1 class=\"ds-h-en\">Our website is under construction.</h1><p class=\"ds-h-ar\" dir=\"rtl\" lang=\"ar\">موقعنا الإلكتروني قيد الإنشاء.</p></div>",
+      "css": ".ds-ground{background-color:#242424;background-image:repeating-linear-gradient(59deg,transparent 0 22px,rgba(201,138,150,.1) 22px 23px),repeating-linear-gradient(121deg,transparent 0 22px,rgba(255,255,255,.05) 22px 23px);padding:32px;display:grid;gap:20px} .ds-h-en{margin:0;color:#f6f4f0;font-family:Jost,sans-serif;font-weight:600;font-size:clamp(2.25rem,10.5vw,3.25rem);line-height:1.04;letter-spacing:-.01em;text-wrap:balance} .ds-h-ar{margin:0;color:#f6f4f0;font-family:'Noto Kufi Arabic',sans-serif;font-weight:700;font-size:clamp(2rem,9vw,2.75rem);line-height:1.32;text-align:right}"
+    },
+    {
+      "name": "Services Line",
+      "kind": "custom",
+      "refersTo": "title",
+      "description": "The five service names in gray-100 with burgundy-500 dividers.",
+      "html": "<ul class=\"ds-services\"><li>Building construction</li><li>Civil engineering &amp; infrastructure</li><li>MEP &amp; specialized technical services</li><li>Fit-out &amp; renovation</li><li>Maintenance</li></ul>",
+      "css": ".ds-services{list-style:none;margin:0;padding:16px;background:#242424;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;column-gap:20px;row-gap:8px;color:#ebebea;font-family:Jost,sans-serif;font-weight:500;font-size:16px;line-height:1.4} .ds-services li{display:flex;align-items:center;gap:20px} .ds-services li+li::before{content:'';width:2px;height:14px;background:#8a3b4c}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Mark Under Erection",
+    "overview": "The brand says \"under construction\" with its own mark: the AMZYA steel mark stands almost complete on the dark hairline ground while a crane lowers its last member into place, holds, and lifts on a slow loop. Everything else on the page is quiet, typographic and bilingual, so the steel carries the drama and the interface stays at the system's sharp, flat, architectural register.\n\nThe page is a single dark viewport on desktop: logo and language toggle at the top, the English headline left and the Arabic headline right of the central mark, the crane bleeding from the top edge, two actions and the services line along the foot. On phones it stacks: masthead, mark and crane, headlines, actions, services. The density is low and the hierarchy is absolute: one artwork, two headlines, two actions.\n\nImagery is raster steel composited onto the official mark's vector outlines, never a redraw of the logo and never stock construction imagery. Interface elements are semantic HTML with inline SVG icons.",
+    "keyCharacteristics": [
+      "Dark ground `#242424` with the system's crossing hairline pattern at the mark's 31-degree angle.",
+      "Burgundy as the single accent: the solid action, the riveted lower plate of the mark, the service dividers.",
+      "Two scripts at equal rank: English in Jost, Arabic in Noto Kufi Arabic, both headlines always on the page.",
+      "Corners of 2 to 4px, no shadows, no glass, no bounce.",
+      "One authored motion (the crane lowering the member) on the crane's own slow ease; reduced motion freezes it raised."
+    ],
+    "rules": [
+      {
+        "name": "The One Burgundy Rule",
+        "body": "Burgundy is the only accent and it marks one action per view: the solid button. Everything else in burgundy is the mark itself or a hairline rule.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Gray-on-Charcoal Rule",
+        "body": "The logo gray `#666666` never sets text on `#242424` (2.7:1). Secondary text on this page is gray-100.",
+        "section": "colors"
+      },
+      {
+        "name": "The Script Parity Rule",
+        "body": "Every English type role has an Arabic twin from the system's pairing, with taller line-height and slightly smaller display size. Arabic is never letter-spaced, never uppercased and never italic.",
+        "section": "typography"
+      },
+      {
+        "name": "The Artwork Never Mirrors Rule",
+        "body": "RTL mirrors layout, alignment and arrows. The logo, the steel mark, the hoisted member, icons and numbers keep their orientation.",
+        "section": "layout"
+      }
+    ],
+    "dos": [
+      "Do treat the AMZYA design system (dark theme) as the source of truth and pull any new colour, size or component from it before inventing one.",
+      "Do keep the ground as `.amz-pattern-dark` at the 31-degree `--mark-angle`.",
+      "Do ship every type role in both scripts with the system's pairing: Jost / Noto Kufi Arabic for display, Plex Sans / Plex Sans Arabic for body and Arabic labels.",
+      "Do mirror layout, alignment and arrows in RTL, and pin artwork, logo, icons and numbers to LTR.",
+      "Do build artwork as raster plates masked to the official mark paths through `scripts/make-plates.mjs`, and keep provenance in every shipped raster.",
+      "Do keep one solid burgundy action per view; secondary actions are off-white outline.",
+      "Do run motion on `--ease-standard` at 120/200ms for UI and on `--ease-load` for the crane, and give every animation a reduced-motion state."
+    ],
+    "donts": [
+      "Don't redraw, recolour or tint the logo or the mark outline; use the official reverse files.",
+      "Don't set `#666666` text on `#242424`.",
+      "Don't add shadows, glass, glows or bounce easing.",
+      "Don't use gradients as surface or control fills. Gradients appear only inside the artwork's own rendering (cable shading, plate and scene fades) and in the hairline pattern.",
+      "Don't round corners beyond 6px or make anything pill-shaped.",
+      "Don't letter-space, uppercase or italicise Arabic.",
+      "Don't mirror the steel mark or the member it receives."
+    ]
+  }
+}
