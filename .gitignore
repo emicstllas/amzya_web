@@ -1,0 +1,18 @@
+node_modules
+.next
+next-env.d.ts
+.impeccable/build
+.impeccable/review
+*.tsbuildinfo
+.DS_Store
+.claude/
+review-sheets/
+.impeccable/hook.cache.json
+# Earlier video direction and photo sets, kept out of the site repo
+*.mp4
+amzya-set-*.png
+# Working previews from the artwork rounds
+.impeccable/*-s.jpg
+.impeccable/art/*.jpg
+.impeccable/art/ref.*
+.impeccable/art/session.txt

@@ -1,0 +1,27 @@
+{
+  "title": "AMZYA under construction page",
+  "question": "Which design should become the page? Pick one, or ask for another set.",
+  "options": [
+    {"id": "storeys", "kind": "assigned", "kicker": "THE ROLL", "label": "The building section",
+     "thesis": "The page is a building under construction. Finished floors are your 5 services, the top floors are still in scaffolding, and the ground floor has 3 entrances: WhatsApp, Email and the link.",
+     "palette": ["#5C1F2C", "#666666", "#242424", "#F6F4F0"], "materials": ["drawing hairlines", "solid burgundy floors"],
+     "viewport": "A full-height cutaway of a building, with the headline in the unbuilt upper floors and the contact doors at street level.",
+     "risk": "The most literal idea of the three, and it needs careful drawing to feel premium.",
+     "comp": ".impeccable/mocks/decision/storeys.png"},
+    {"id": "mark", "kind": "dealt", "label": "The mark under erection",
+     "thesis": "Your logo mark is the building. It fills the screen, half finished in solid burgundy and half still in steel construction lines.",
+     "palette": ["#242424", "#5C1F2C", "#666666", "#FFFFFF"], "materials": ["dark ground", "31 degree brand hairlines"],
+     "viewport": "A giant mark on a dark ground, with English on the left, Arabic on the right and the contact row along the bottom.",
+     "risk": "Bold and very brand-led, but says less about the services at first glance.",
+     "comp": ".impeccable/mocks/decision/mark.png"},
+    {"id": "hoarding", "kind": "dealt", "label": "The site hoarding",
+     "thesis": "The fence around a Dubai site, as a web page. A run of printed burgundy, white and pattern panels, with a site door in the fence that holds the contact details.",
+     "palette": ["#5C1F2C", "#FFFFFF", "#666666", "#F6F4F0"], "materials": ["printed panels", "steel posts"],
+     "viewport": "A full-width hoarding with huge bilingual lettering across its panels and a door in the middle holding the 3 actions.",
+     "risk": "Feels most like a real site, but must not look like a photo of a fence with no working parts.",
+     "comp": ".impeccable/mocks/decision/hoarding.png"}
+  ],
+  "reroll": {"label": "Show me 3 different ones"},
+  "buildPath": {"value": "comp", "toggle": true},
+  "steer": true
+}

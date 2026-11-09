@@ -1,0 +1,627 @@
+/* AMZYA under construction page.
+   Tokens are the AMZYA design system's (dark theme). Desktop positions come from the approved comp, measured
+   in % of a 2592 x 1536 frame and expressed in cqw of the stage (frame height = 59.259cqw). */
+
+:root {
+  --burgundy-300: #c98a96;
+  --burgundy-500: #8a3b4c;
+  --burgundy-600: #74293a;
+  --burgundy-700: #5c1f2c;
+  --burgundy-800: #461722;
+  --gray-100: #ebebea;
+  --gray-200: #d6d6d5;
+  --gray-700: #4d4d4d;
+  --gray-900: #242424;
+  --off-white: #f6f4f0;
+  --white: #ffffff;
+  --mark-angle: 31deg;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --focus-ring: var(--burgundy-300);
+  /* The crane's own ease: a heavy load starts and stops slowly. */
+  --ease-load: cubic-bezier(0.45, 0, 0.2, 1);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--gray-900);
+  -webkit-text-size-adjust: 100%;
+  scrollbar-color: var(--gray-700) var(--gray-900);
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: var(--gray-900);
+  color: var(--off-white);
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[lang='ar'] body {
+  font-family: var(--font-body-ar), var(--font-body), sans-serif;
+  line-height: 1.9;
+}
+
+::selection {
+  background: var(--burgundy-700);
+  color: var(--white);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+/* Brand hairline ground at the mark's 31-degree angle. */
+.amz-pattern-dark {
+  background-color: var(--gray-900);
+  background-image:
+    repeating-linear-gradient(calc(90deg - var(--mark-angle)), transparent 0 22px, rgba(201, 138, 150, 0.1) 22px 23px),
+    repeating-linear-gradient(calc(90deg + var(--mark-angle)), transparent 0 22px, rgba(255, 255, 255, 0.05) 22px 23px);
+}
+
+.page {
+  min-height: 100svh;
+  overflow-x: clip;
+}
+
+/* ---------- Shared pieces ---------- */
+
+.logo {
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.lang-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid rgba(246, 244, 240, 0.7);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.lang-toggle a {
+  display: grid;
+  place-items: center;
+  color: var(--off-white);
+  transition: background-color var(--dur-base) var(--ease-standard), color var(--dur-base) var(--ease-standard);
+}
+
+.lang-toggle a:focus-visible {
+  outline-offset: -4px;
+}
+
+.lang-toggle a[lang='en'] {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.lang-toggle a[lang='ar'] {
+  font-family: var(--font-body-ar), sans-serif;
+  font-weight: 500;
+}
+
+.lang-toggle a:hover {
+  background: rgba(246, 244, 240, 0.1);
+}
+
+.lang-toggle a[aria-current='page'] {
+  background: var(--off-white);
+  color: var(--gray-900);
+}
+
+.headline {
+  margin: 0;
+  color: var(--off-white);
+  text-wrap: balance;
+}
+
+.headline-en {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.04;
+  text-align: left;
+}
+
+.headline-ar {
+  font-family: var(--font-display-ar), var(--font-body-ar), sans-serif;
+  font-weight: 700;
+  line-height: 1.32;
+  text-align: right;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid rgba(246, 244, 240, 0.85);
+  border-radius: 4px;
+  color: var(--off-white);
+  font-family: var(--font-display), sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  white-space: nowrap;
+  transition:
+    background-color var(--dur-base) var(--ease-standard),
+    border-color var(--dur-base) var(--ease-standard),
+    color var(--dur-base) var(--ease-standard);
+}
+
+html[lang='ar'] .btn {
+  font-family: var(--font-body-ar), sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.btn-solid {
+  background: var(--burgundy-700);
+  border-color: var(--burgundy-700);
+}
+
+.btn-solid:hover {
+  background: var(--burgundy-600);
+  border-color: var(--burgundy-600);
+}
+
+.btn-solid:active {
+  background: var(--burgundy-800);
+  border-color: var(--burgundy-800);
+}
+
+.btn-outline:hover {
+  background: rgba(246, 244, 240, 0.08);
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.btn-outline:active {
+  background: rgba(246, 244, 240, 0.14);
+}
+
+.btn-icon,
+.btn-arrow {
+  flex: none;
+}
+
+.btn-arrow {
+  transition: transform var(--dur-base) var(--ease-standard);
+}
+
+.btn:hover .btn-arrow {
+  transform: translateX(0.25em);
+}
+
+/* Arrows point the reading direction; icons, logos and numbers never mirror. */
+html[dir='rtl'] .btn-arrow {
+  transform: scaleX(-1);
+}
+
+html[dir='rtl'] .btn:hover .btn-arrow {
+  transform: scaleX(-1) translateX(0.25em);
+}
+
+.services {
+  color: var(--gray-100);
+  font-family: var(--font-display), sans-serif;
+  font-weight: 500;
+}
+
+html[lang='ar'] .services {
+  font-family: var(--font-body-ar), sans-serif;
+}
+
+/* ---------- The erection scene ---------- */
+
+.scene {
+  position: relative;
+  direction: ltr; /* artwork never mirrors */
+}
+
+.scene-art {
+  position: absolute;
+}
+
+.plate {
+  position: absolute;
+}
+
+.plate img {
+  object-fit: contain;
+}
+
+/* Positions in % of the scene, derived from comp boxes inside the scene (comp px 697..2210 x 0..1190). */
+.plate-steel {
+  left: 0;
+  top: 40.25%;
+  width: 72.77%;
+  height: 59.75%;
+  z-index: 1;
+}
+
+.plate-boom {
+  left: 53.73%;
+  top: 0;
+  width: 46.27%;
+  height: 17.06%;
+  z-index: 1;
+}
+
+.plate-rig {
+  left: 31.66%;
+  top: 0;
+  width: 41.31%;
+  height: 36.13%;
+  z-index: 2;
+  animation: amz-lower 12s var(--ease-load) infinite;
+  will-change: transform;
+}
+
+/* The two hoist cables continue above the plate, so the rig never shows a cut while it is lowered. */
+.rig-cables {
+  position: absolute;
+  left: 48.33%;
+  bottom: 99.5%;
+  width: 3.27%;
+  height: 45%;
+  background:
+    linear-gradient(90deg, #787777, #f5f3f3 45%, #a9a9a9) left / 16.3% 100% no-repeat,
+    linear-gradient(90deg, #8f8f90, #e8e8e8 45%, #9c9d9e) right / 16.3% 100% no-repeat;
+}
+
+/* Setting-out lines from the member's ends to where it lands; they shorten as it comes down. */
+.rig-guide {
+  position: absolute;
+  top: 100%;
+  height: 25.35%;
+  width: 0;
+  border-left: 1.5px dashed rgba(246, 244, 240, 0.5);
+  transform-origin: top;
+  animation: amz-guide 12s var(--ease-load) infinite;
+}
+
+.rig-guide-start {
+  left: 3%;
+}
+
+.rig-guide-end {
+  left: 89%;
+}
+
+/* The member hangs 109 comp px above its seat (25.35% of the rig's height). */
+@keyframes amz-lower {
+  0%,
+  12% {
+    transform: translateY(0);
+  }
+  36%,
+  62% {
+    transform: translateY(25.35%);
+  }
+  86%,
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes amz-guide {
+  0%,
+  12% {
+    transform: scaleY(1);
+  }
+  36%,
+  62% {
+    transform: scaleY(0);
+  }
+  86%,
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plate-rig,
+  .rig-guide {
+    animation: none;
+  }
+
+  .btn,
+  .btn-arrow,
+  .lang-toggle a {
+    transition: none;
+  }
+}
+
+/* ---------- Phones and narrow or tall windows: stacked ---------- */
+
+@media (max-width: 899px), (max-aspect-ratio: 4/3) {
+  .stage {
+    display: flex;
+    flex-direction: column;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 16px 40px;
+  }
+
+  .masthead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-top: 20px;
+    direction: ltr;
+  }
+
+  .logo {
+    width: min(60%, 220px);
+    min-height: 44px;
+  }
+
+  .lang-toggle {
+    flex: none;
+    width: 104px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .scene {
+    margin: 12px -16px 0;
+    aspect-ratio: 1513 / 1190;
+    width: calc(100% + 32px);
+    overflow: hidden;
+    /* The crane comes down from above the header: its cables and boom fade in instead of starting at a hard edge. */
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 14%);
+    mask-image: linear-gradient(to bottom, transparent, #000 14%);
+  }
+
+  /* The mark takes ~88% of the width; the boom runs off the right edge. */
+  .scene-art {
+    left: 6%;
+    top: 0;
+    width: 121%;
+    height: 100%;
+  }
+
+  .headlines {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 12px;
+  }
+
+  .headline-en {
+    font-size: clamp(2.25rem, 10.5vw, 3.25rem);
+  }
+
+  .headline-ar {
+    font-size: clamp(2rem, 9vw, 2.75rem);
+  }
+
+  .headline:not(h1) {
+    opacity: 0.88;
+  }
+
+  .actions {
+    display: grid;
+    gap: 12px;
+    margin-top: 36px;
+  }
+
+  .btn {
+    min-height: 56px;
+    gap: 14px;
+    padding: 0 20px;
+    font-size: 16px;
+  }
+
+  .btn-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .services {
+    display: grid;
+    gap: 10px;
+    margin-top: 36px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .services li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .services li::before {
+    content: '';
+    flex: none;
+    width: 14px;
+    height: 2px;
+    background: var(--burgundy-500);
+  }
+}
+
+/* ---------- Desktop: the comp's single viewport ---------- */
+
+@media (min-width: 900px) and (min-aspect-ratio: 4/3) {
+  .page {
+    height: 100svh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* the crane bleeds from the top edge, so the frame always touches it */
+  }
+
+  .stage {
+    position: relative;
+    flex: none;
+    width: min(100vw, 100svh * 1.6875);
+    aspect-ratio: 2592 / 1536;
+    container-type: inline-size;
+  }
+
+  .masthead {
+    position: absolute;
+    inset: 0 0 auto;
+    height: 0;
+  }
+
+  .logo {
+    position: absolute;
+    left: 4.05cqw;
+    top: 3.01cqw;
+    width: 22.84cqw;
+    height: 4.82cqw;
+  }
+
+  .lang-toggle {
+    position: absolute;
+    left: 88.39cqw;
+    top: 3.24cqw;
+    width: 9.1cqw;
+    height: 3.12cqw;
+    font-size: max(13px, 1.12cqw);
+    border-radius: max(4px, 0.25cqw);
+  }
+
+  .scene {
+    position: absolute;
+    left: 26.89cqw;
+    top: 0;
+    width: 58.37cqw;
+    height: 45.91cqw;
+  }
+
+  .scene-art {
+    inset: 0;
+  }
+
+  .headlines {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .headline {
+    position: absolute;
+    pointer-events: auto;
+  }
+
+  .headline-line {
+    display: block;
+  }
+
+  .headline-en {
+    left: 3.86cqw;
+    top: 19.6cqw;
+    width: 27.55cqw;
+    font-size: 4.05cqw;
+  }
+
+  .headline-ar {
+    right: 3.44cqw;
+    top: 18.7cqw;
+    width: 24cqw;
+    font-size: 3.85cqw;
+  }
+
+  .actions {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 48.88cqw;
+    height: 4.24cqw;
+    display: flex;
+    justify-content: center;
+    gap: 2.08cqw;
+  }
+
+  .actions li {
+    display: flex;
+  }
+
+  .btn {
+    gap: 1.4cqw;
+    padding: 0 2.6cqw;
+    font-size: max(14px, 1.45cqw);
+  }
+
+  .actions .btn {
+    min-width: 22.69cqw;
+  }
+
+  .btn-icon {
+    width: 2.2cqw;
+    height: 2.2cqw;
+  }
+
+  .btn-arrow {
+    width: 1.6cqw;
+    height: 1.6cqw;
+  }
+
+  .services {
+    position: absolute;
+    left: 3cqw;
+    right: 3cqw;
+    top: 54.2cqw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2.2cqw;
+    font-size: max(13px, 1.36cqw);
+    line-height: 1.4;
+  }
+
+  html[lang='ar'] .services {
+    font-size: max(13px, 1.24cqw);
+  }
+
+  .services li {
+    display: flex;
+    align-items: center;
+    gap: 2.2cqw;
+  }
+
+  .services li + li::before {
+    content: '';
+    width: max(2px, 0.12cqw);
+    height: 1.3cqw;
+    background: var(--burgundy-500);
+  }
+}

@@ -1,0 +1,128 @@
+{
+ "regions": [
+  {
+   "id": "logo",
+   "kind": "chrome",
+   "pixelBox": {
+    "x": 105,
+    "y": 78,
+    "w": 592,
+    "h": 125
+   },
+   "note": "AMZYA horizontal logo, official SVG file, reverse tone on dark"
+  },
+  {
+   "id": "lang-toggle",
+   "kind": "control",
+   "pixelBox": {
+    "x": 2291,
+    "y": 84,
+    "w": 236,
+    "h": 81
+   },
+   "note": "EN and Arabic language toggle, EN active on white"
+  },
+  {
+   "id": "headline-en",
+   "kind": "text",
+   "pixelBox": {
+    "x": 100,
+    "y": 526,
+    "w": 714,
+    "h": 325
+   },
+   "note": "Our website is under construction. Large white display type, three lines, left aligned"
+  },
+  {
+   "id": "headline-ar",
+   "kind": "text",
+   "pixelBox": {
+    "x": 1941,
+    "y": 515,
+    "w": 562,
+    "h": 344
+   },
+   "note": "Arabic headline, large white, three lines, right aligned"
+  },
+  {
+   "id": "btn-whatsapp",
+   "kind": "control",
+   "pixelBox": {
+    "x": 356,
+    "y": 1267,
+    "w": 588,
+    "h": 110
+   },
+   "note": "WhatsApp button, solid burgundy, icon, uppercase label, arrow"
+  },
+  {
+   "id": "btn-email",
+   "kind": "control",
+   "pixelBox": {
+    "x": 998,
+    "y": 1267,
+    "w": 509,
+    "h": 110
+   },
+   "note": "Email button, outlined white, icon, uppercase label, arrow"
+  },
+  {
+   "id": "btn-profile",
+   "kind": "control",
+   "pixelBox": {
+    "x": 1560,
+    "y": 1267,
+    "w": 676,
+    "h": 110
+   },
+   "note": "Company profile button, outlined white, icon, uppercase label, arrow"
+  },
+  {
+   "id": "services",
+   "kind": "text",
+   "pixelBox": {
+    "x": 178,
+    "y": 1413,
+    "w": 2249,
+    "h": 45
+   },
+   "note": "One line of five service names separated by short burgundy rules"
+  },
+  {
+   "id": "steel-mark",
+   "kind": "plate",
+   "pixelBox": {
+    "x": 697,
+    "y": 479,
+    "w": 1101,
+    "h": 711
+   },
+   "note": "AMZYA mark as the structure under erection: lower half finished riveted burgundy steel, upper half open white steel truss, the right part of its top bar missing"
+  },
+  {
+   "id": "crane-rig",
+   "kind": "plate",
+   "pixelBox": {
+    "x": 1176,
+    "y": 0,
+    "w": 625,
+    "h": 430
+   },
+   "bleed": true,
+   "note": "crane cables, hazard-striped hook block and two slings carrying the final truss member above its seat; moves vertically"
+  },
+  {
+   "id": "crane-boom",
+   "kind": "plate",
+   "pixelBox": {
+    "x": 1510,
+    "y": 0,
+    "w": 700,
+    "h": 203
+   },
+   "bleed": true,
+   "note": "silver lattice crane boom from top, fading out toward the right"
+  }
+ ],
+ "allowUncovered": true
+}

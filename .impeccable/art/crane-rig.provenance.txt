@@ -1,0 +1,1 @@
+Composite built by scripts/make-plates.mjs: Higgsfield gpt_image_2_6 steel, crane and boom artwork (jobs a3aa264f-a607-4463-a27c-e15990360df1, fdfa4a2a-f681-48b0-8f1b-b5ea4874b25b, fcba485b-e796-43b2-bba7-fe480be3b736) masked to the official AMZYA mark vector paths.
